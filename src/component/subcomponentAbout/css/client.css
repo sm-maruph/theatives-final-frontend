@@ -75,11 +75,18 @@
   padding: 1rem;
   border-radius: 14px;
   cursor: pointer;
-  background: linear-gradient(150deg, rgba(163, 43, 52, 0.5), rgba(92, 20, 26, 0.62));
-  border: 1px solid rgba(255, 196, 107, 0.16);
-  box-shadow: 0 10px 26px -16px rgba(0, 0, 0, 0.7);
-  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
-              box-shadow 0.4s ease, border-color 0.35s ease;
+  background: var(--panel-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 51, 85, 0.35);
+  border-color: color-mix(in srgb, var(--accent, #FF3355) 35%, transparent);
+  box-shadow: inset 0 0 30px rgba(255, 51, 85, 0.12);
+  transition: background 0.35s ease, transform 1.2s cubic-bezier(0.33, 1, 0.68, 1);
+  animation: panelGlow 4s ease-in-out infinite;
+}
+@keyframes panelGlow {
+  0%, 100% { box-shadow: inset 0 0 24px color-mix(in srgb, var(--accent, #FF3355) 10%, transparent); }
+  50%      { box-shadow: inset 0 0 44px color-mix(in srgb, var(--accent, #FF3355) 22%, transparent); }
 }
 
 .client-logo:hover {
@@ -106,10 +113,11 @@
 
 .client-logo p,
 .client-logo .client-name {
-  margin-top: 0.7rem;
+  margin: 0.5rem 0 0.25rem;
   font-size: 0.85rem;
-  font-weight: 600;
-  color: #ffc46b;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ff5c72;
 }
 
 /* ---------- FIX: modal client name showing dark ---------- */
