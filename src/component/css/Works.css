@@ -155,8 +155,8 @@
   border-radius: 20px;
   overflow: hidden;
   isolation: isolate;
-  background: linear-gradient(140deg,
-    var(--wk-maroon-lift) 0%, var(--wk-maroon) 45%, var(--wk-maroon-deep) 100%);
+  /* background: linear-gradient(140deg,
+    var(--wk-maroon-lift) 0%, var(--wk-maroon) 45%, var(--wk-maroon-deep) 100%); */
   box-shadow:
     0 1px 2px rgba(0, 0, 0, 0.10),
     0 30px 70px -28px rgba(0, 0, 0, 0.85),
@@ -264,9 +264,31 @@
   pointer-events: none;
 }
 
-.wk-body > * { position: relative; z-index: 1; }
+.wk-body {
+  position: relative;
+  flex: 1 1 50%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1.5rem, 3vw, 3rem);
+   background: linear-gradient(150deg, rgba(32, 12, 15, 0.97), rgba(7, 4, 4, 0.99));
+  border-top: 1px solid rgba(255, 51, 85, 0.35);
+}
 
-.wk-details { width: 100%; }
+.wk-body::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: repeating-linear-gradient(to bottom,
+    rgba(255, 255, 255, 0.028) 0px, rgba(255, 255, 255, 0.028) 1px,
+    transparent 1px, transparent 4px);
+  pointer-events: none;
+}
+
+.wk-body > * { position: relative; z-index: 1; }
 
 .wk-details p {
   position: relative;
