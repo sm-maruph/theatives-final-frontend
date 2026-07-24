@@ -10,6 +10,14 @@ import ModalPortal from "../common/ModalPortal";
 import "./css/ShowcaseWork.css";
 import sw1 from "../../assets/images/showcasework/sw1.png";
 import sw1_1 from "../../assets/images/showcasework/sw1_1.png";
+import sw1_shop from "../../assets/images/showcasework/sw1_shop.png";
+import sw1_inventory from "../../assets/images/showcasework/sw1_inventory.png";
+import sw1_orders from "../../assets/images/showcasework/sw1_orders.png";
+import sw1_custom_ui_from_admin from "../../assets/images/showcasework/sw1_custom_ui_from_admin.png";
+
+
+
+
 
 // Enable these imports when the backend endpoints are ready.
 // import {
@@ -93,19 +101,24 @@ const DUMMY_PROJECTS = [
         title: "Storefront UI",
         items: [
           {
-            src: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=1200&q=85",
+            src: sw1_shop,
             alt: "Product catalogue interface",
             caption: "Product discovery and category browsing",
           },
           {
-            src: "https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=1200&q=85",
-            alt: "Online shopping experience",
-            caption: "Responsive product presentation",
+            src: sw1_inventory,
+            alt: "Inventory management interface",
+            caption: "Real-time stock tracking and updates",
           },
           {
-            src: "https://images.unsplash.com/photo-1607083206968-13611e3d76db?auto=format&fit=crop&w=1200&q=85",
-            alt: "Checkout and payment concept",
-            caption: "Clear cart and checkout decisions",
+            src: sw1_orders,
+            alt: "Order management interface",
+            caption: "Tracking and managing customer orders",
+          },
+          {
+            src: sw1_custom_ui_from_admin,
+            alt: "Custom UI from admin panel",
+            caption: "Tailored views for administrative tasks",
           },
         ],
       },
