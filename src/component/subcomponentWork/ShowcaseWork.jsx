@@ -14,6 +14,8 @@ import sw1_shop from "../../assets/images/showcasework/sw1_shop.png";
 import sw1_inventory from "../../assets/images/showcasework/sw1_inventory.png";
 import sw1_orders from "../../assets/images/showcasework/sw1_orders.png";
 import sw1_custom_ui_from_admin from "../../assets/images/showcasework/sw1_custom_ui_from_admin.png";
+import rainz_lifestyle_ui_showcase_short from "../../assets/images/showcasework/rainz_lifestyle_ui_showcase_short.mp4";
+
 
 
 
@@ -171,9 +173,9 @@ const DUMMY_PROJECTS = [
       },
       {
         type: "video",
-        src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+        src: rainz_lifestyle_ui_showcase_short,
         poster:
-          "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1600&q=85",
+          sw1,
         caption:
           "Replace this sample with a screen recording of the storefront, checkout, payment confirmation, and administration workflow.",
       },
