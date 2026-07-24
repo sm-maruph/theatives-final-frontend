@@ -8,6 +8,8 @@ import React, {
 import { createPortal } from "react-dom";
 import ModalPortal from "../common/ModalPortal";
 import "./css/ShowcaseWork.css";
+import sw1 from "../../assets/images/showcasework/sw1.png";
+import sw1_1 from "../../assets/images/showcasework/sw1_1.png";
 
 // Enable these imports when the backend endpoints are ready.
 // import {
@@ -27,7 +29,7 @@ const DUMMY_PROJECTS = [
       "A complete commerce experience with product management, secure checkout, online payment, order tracking, and a role-based administration dashboard.",
     cover: {
       type: "image",
-      src: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=1600&q=85",
+      src: sw1_1,
       alt: "E-commerce storefront displayed on a laptop",
     },
     client: "Retail Growth Company",
@@ -72,10 +74,10 @@ const DUMMY_PROJECTS = [
       },
       {
         type: "image",
-        src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=85",
+        src: sw1,
         alt: "Commerce analytics dashboard",
         caption:
-          "The management dashboard brings sales, products, orders, inventory, and customer activity into one workspace.",
+          "The Rainz Lifestyle landing page brings featured collections, promotions, categories, and products together in one seamless shopping experience.",
       },
       {
         type: "heading",
@@ -109,7 +111,7 @@ const DUMMY_PROJECTS = [
       },
       {
         type: "longImage",
-        src: "/images/showcase/fashion-ecommerce-long.png",
+        src: sw1,
         alt: "Full-page fashion e-commerce website interface",
         title: "Complete storefront interface",
         caption:
